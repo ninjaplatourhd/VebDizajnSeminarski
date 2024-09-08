@@ -1,0 +1,56 @@
+:root {
+    --pozadina: rgb(27, 27, 27);
+    --tekst: #eeeeee;
+}
+
+
+body {
+    background-color: var(--pozadina);
+}
+
+#modalSadrzaj {
+    color:var(--tekst);
+    background-color: var(--pozadina);
+}
+
+
+.glavniNaslov {
+    color: var(--tekst);
+}
+
+.tekstCena {
+    color:var(--tekst);
+}
+
+.sadrzajNaslov {
+    color: var(--tekst);
+}
+
+.sadrzajTekst {
+    color:var(--tekst);
+}
+
+#modalSadrzaj {
+    background-color: var(--pozadina);
+}
+
+.card-text {
+    color:var(--tekst);
+}
+
+.card-title {
+    color:var(--tekst);
+}
+
+
+.karteNaslov {
+    color:var(--tekst);
+}
+
+.brojRedovaLabela {
+    color:var(--tekst);
+}
+
+.paragraf {
+    color:var(--tekst);
+}

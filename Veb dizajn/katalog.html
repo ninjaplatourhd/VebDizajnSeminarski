@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katalog karti sajta Card Nexus">
+    <link href="css/glavni.css" rel="stylesheet">
+    <link href="css/katalog.css" rel="stylesheet">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link id="font" href="css/font/normalanFont.css" rel="stylesheet">
+    <link id="tema" href="css/teme/svetla.css" rel="stylesheet">
+    <title>Card Nexus: Emporijum Karti</title>
+
+    <style>
+        .card-img-top {
+          min-height: 200px;
+          max-height: 800px;
+          object-fit: cover;
+        }
+
+        .card {
+          min-width: 150px;
+          max-width: 300px;
+          background-color: transparent;
+          border:none;
+          margin: auto;
+          z-index: 1;
+          position: relative;
+        }
+
+        .col-12 .card {
+           max-width: 500px;
+        }
+
+        .selector {
+           margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body></body>
+<header>
+    <nav id="navigacija">
+        <div id="logoIme">
+            <img src="slike/ikonice/logo2.png" alt="Logo" id="logo">
+            <a href="index.html" id="imeSajta">Card Nexus: Emporijum Karti</a>
+        </div>
+        <div id="navigacijaDesnaStrana">
+            <ul id="navigacijaLinkovi">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O Nama</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div id="hamburger">
+                <div id="hamburger-linije">
+                    <div class="linija"></div>
+                    <div class="linija"></div>
+                    <div class="linija"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="meni" class="nevidljivo">
+<div id="hamburger-meni">
+    <a class="hamburger-meni-link" href="index.html">Početna</a>
+    <a class="hamburger-meni-link" href="oNama.html">O Nama</a>
+    <a class="hamburger-meni-link" href="katalog.html">Katalog</a>
+    <a class="hamburger-meni-link" href="kontakt.html">Kontakt</a>
+    <div id="hamburgerOpcije">
+        <img src="slike/ikonice/temaIkonica.png" class="opcijeDugme" id="promeniTemuHamburger">
+        <img src="slike/ikonice/fontIkonica.png" alt="Font Ikonica" class="opcijeDugme" id="promeniFontHamburger">
+        <img src="slike/ikonice/sacuvajIkonica.png" class="opcijeDugme" id="sacuvajKolaciceHamburger">
+    </div>
+</div>
+<div id="mega-meni">
+    <div class="mega-meni-kolona">
+        <h5 class="mega-meni-kolona-naziv">Sajt</h5>
+         <a href="index.html" class="mega-meni-kolona-link">Početna</a>
+         <a href="oNama.html" class="mega-meni-kolona-link">O Nama</a>
+         <a href="katalog.html" class="mega-meni-kolona-link">Katalog</a>
+         <a href="kontakt.html" class="mega-meni-kolona-link">Kontakt</a>
+    </div>
+    <div class="mega-meni-kolona">
+        <h5 class="mega-meni-kolona-naziv">Katalog</h5>
+        <a href="katalog.html#yugiohDeo" class="mega-meni-kolona-link">YuGiOh!</a>
+        <a href="katalog.html#mtgDeo" class="mega-meni-kolona-link">Magic The Gathering</a>
+        <a href="katalog.html#pokemonDeo" class="mega-meni-kolona-link">Pokemon</a>
+    </div>
+    <div class="mega-meni-kolona">
+        <h5 class="mega-meni-kolona-naziv">Opcije</h5>
+        <img src="slike/ikonice/temaIkonica.png" class="opcijeDugme" id="promeniTemuMega">
+        <img src="slike/ikonice/fontIkonica.png" alt="Font Ikonica" class="opcijeDugme" id="promeniFontMega">
+        <img src="slike/ikonice/sacuvajIkonica.png" class="opcijeDugme" id="sacuvajKolaciceMega">
+    </div>
+    
+</div>
+</section>
+    <main>
+        <section id="banerSekcija">
+            <div id="dugmeLevo" class="banerDugme" onclick="promeniSlikuBanera(-1)" >
+                <img src="slike/ikonice/banerDugmeLevo.png" class="banerIkonica" alt="Banner Dugme Levo">
+            </div>
+            <div id="dugmeDesno" class="banerDugme" onclick="promeniSlikuBanera(1)">
+                <img src="slike/ikonice/banerDugmeDesno.png" class="banerIkonica" alt="Banner Dugme Desno">
+            </div>
+        </section>
+    <h1 id="yugiohDeo" class="mb-4 mt-5 text-center karteNaslov">Yu Gi Oh! Karte</h1>
+    <section class="container my-4">
+        <div class="d-flex justify-content-end selector">
+          <label for="brojRedovaYuGiOh" class="me-2 brojRedovaLabela">Karte po redu:</label>
+          <select id="brojRedovaYuGiOh" class="form-select form-select-sm" style="width: auto;">
+            <option value="col-3">4</option>
+            <option value="col-4" selected>3</option>
+            <option value="col-6">2</option>
+            <option value="col-12">1</option>
+          </select>
+        </div>
+    
+        
+        <div id="yugiohKarteKontejner" class="row">
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh1.png" class="card-img-top img-fluid" alt="Yugioh Karta 1">
+              <div class="card-body">
+                <h5 class="card-title">Gizmek Orochi The Serpentron Skyslasher</h5>
+                <p class="card-text">Cena: 149.99 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh2.png" class="card-img-top  img-fluid" alt="Yugioh Karta 2">
+              <div class="card-body">
+                <h5 class="card-title">Cyber Dragon</h5>
+                <p class="card-text">Cena: 120.00 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh3.png" class="card-img-top img-fluid" alt="Yugioh Karta 3">
+              <div class="card-body">
+                <h5 class="card-title">Gren Maju Da Eiza</h5>
+                <p class="card-text">Cena: 80.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh4.png" class="card-img-top img-fluid" alt="Yugioh Karta 4">
+              <div class="card-body">
+                <h5 class="card-title">Exodia The Forbidden One</h5>
+                <p class="card-text">Cena: 199.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh5.png" class="card-img-top img-fluid" alt="Yugioh Karta 5">
+              <div class="card-body">
+                <h5 class="card-title">Cyber End Dragon</h5>
+                <p class="card-text">Cena: 299.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh6.png" class="card-img-top img-fluid" alt="Yugioh Karta 6">
+              <div class="card-body">
+                <h5 class="card-title">Infinite Impermanence</h5>
+                <p class="card-text">Cena: 459.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh7.png" class="card-img-top img-fluid" alt="Yugioh Karta 7">
+              <div class="card-body">
+                <h5 class="card-title">Limiter Removal</h5>
+                <p class="card-text">Cena: 59.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/yugioh/yugioh8.png" class="card-img-top img-fluid" alt="Yugioh Karta 8">
+              <div class="card-body">
+                <h5 class="card-title">Judgment Of Anubis</h5>
+                <p class="card-text">Cena: 169.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <h1 id="mtgDeo" class="mb-4 mt-5 text-center karteNaslov">Magic The Gathering Karte</h1>
+      <section class="container my-4">
+        <div class="d-flex justify-content-end selector">
+          <label for="brojRedovaMtg" class="me-2 brojRedovaLabela">Karte po redu:</label>
+          <select id="brojRedovaMtg" class="form-select form-select-sm" style="width: auto;">
+            <option value="col-3">4</option>
+            <option value="col-4" selected>3</option>
+            <option value="col-6">2</option>
+            <option value="col-12">1</option>
+          </select>
+        </div>
+    
+        
+        <div id="mtgKarteKontejner" class="row">
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg1.png" class="card-img-top img-fluid" alt="MTG Karta 1">
+              <div class="card-body">
+                <h5 class="card-title">Myrkul, Lord of Bones</h5>
+                <p class="card-text">Cena: 99.99 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg2.png" class="card-img-top  img-fluid" alt="MTG Karta 2">
+              <div class="card-body">
+                <h5 class="card-title">Bane, Lord of Darkness</h5>
+                <p class="card-text">Cena: 599.99 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg3.png" class="card-img-top img-fluid" alt="MTG Karta 3">
+              <div class="card-body">
+                <h5 class="card-title">Bhaal, Lord of Murder</h5>
+                <p class="card-text">Cena: 1499.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg4.png" class="card-img-top img-fluid" alt="MTG Karta 4">
+              <div class="card-body">
+                <h5 class="card-title">Counterspell</h5>
+                <p class="card-text">Cena: 299.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg5.png" class="card-img-top img-fluid" alt="MTG Karta 5">
+              <div class="card-body">
+                <h5 class="card-title">Shatter The Sky</h5>
+                <p class="card-text">Cena: 299.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg6.png" class="card-img-top img-fluid" alt="MTG Karta 6">
+              <div class="card-body">
+                <h5 class="card-title">Serra Angel</h5>
+                <p class="card-text">Cena: 659.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg7.png" class="card-img-top img-fluid" alt="MTG Karta 7">
+              <div class="card-body">
+                <h5 class="card-title">Shivan Dragon</h5>
+                <p class="card-text">Cena: 159.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/mtg/mtg8.png" class="card-img-top img-fluid" alt="MTG Karta 8">
+              <div class="card-body">
+                <h5 class="card-title">Avaricious Dragon</h5>
+                <p class="card-text">Cena: 999.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <h1 id="pokemonDeo" class="mb-4 mt-5 text-center karteNaslov">Pokemon Karte</h1>
+      <section class="container my-4">
+        <div class="d-flex justify-content-end selector">
+          <label for="brojRedovaPokemon" class="me-2 brojRedovaLabela">Karte po redu:</label>
+          <select id="brojRedovaPokemon" class="form-select form-select-sm" style="width: auto;">
+            <option value="col-3">4</option>
+            <option value="col-4" selected>3</option>
+            <option value="col-6">2</option>
+            <option value="col-12">1</option>
+          </select>
+        </div>
+    
+        
+        <div id="pokemonKarteKontejner" class="row">
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon1.png" class="card-img-top img-fluid" alt="Pokemon Karta 1">
+              <div class="card-body">
+                <h5 class="card-title">Charizard</h5>
+                <p class="card-text">Cena: 799.99 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon2.png" class="card-img-top  img-fluid" alt="Pokemon Karta 2">
+              <div class="card-body">
+                <h5 class="card-title">Pikachu</h5>
+                <p class="card-text">Cena: 299.99 RSD</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon3.png" class="card-img-top img-fluid" alt="Pokemon Karta 3">
+              <div class="card-body">
+                <h5 class="card-title">Blastoise</h5>
+                <p class="card-text">Cena: 499.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon4.png" class="card-img-top img-fluid" alt="Pokemon Karta 4">
+              <div class="card-body">
+                <h5 class="card-title">Flygon</h5>
+                <p class="card-text">Cena: 799.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon5.png" class="card-img-top img-fluid" alt="Pokemon Karta 5">
+              <div class="card-body">
+                <h5 class="card-title">Miltank</h5>
+                <p class="card-text">Cena: 199.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon6.png" class="card-img-top img-fluid" alt="Pokemon Karta 6">
+              <div class="card-body">
+                <h5 class="card-title">Mareep</h5>
+                <p class="card-text">Cena: 69.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon7.png" class="card-img-top img-fluid" alt="Pokemon Karta 7">
+              <div class="card-body">
+                <h5 class="card-title">Jigglypuff</h5>
+                <p class="card-text">Cena: 399.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img src="slike/karte/pokemon/pokemon8.png" class="card-img-top img-fluid" alt="Pokemon Karta 8">
+              <div class="card-body">
+                <h5 class="card-title">Ekans</h5>
+                <p class="card-text">Cena: 99.99 RSD</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    <footer>
+        <div class="footerSekcija">
+            <h3>O nama</h3>
+            <p>Mi smo prodavnica specijalizovana za kolekcionarske karte i dodatke. Naša strast je da vam obezbedimo najbolje iskustvo kupovine karti.</p>
+        </div>
+        <div class="footerSekcija">
+            <h3>Kontakt</h3>
+            <p>Email: kontakt@cardnexus.rs</p>
+            <p>Telefon: +381 11 123 4567</p>
+        </div>
+        <div class="footerSekcija">
+            <h3>Pratite nas</h3>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+        <div class="footerSekcija">
+            <h3>Radno vreme</h3>
+            <p>Ponedeljak - Petak: 09:00 - 20:00</p>
+            <p>Subota: 10:00 - 18:00</p>
+            <p>Nedelja: Zatvoreno</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="javascript/katalog.js"></script>
+<script src="javascript/prilagodjavanje.js"></script>
+<script src="javascript/banerIMeni.js"></script>
+<script src="javascript/bootstrap/js/bootstrap.bundle.min.js"></script>

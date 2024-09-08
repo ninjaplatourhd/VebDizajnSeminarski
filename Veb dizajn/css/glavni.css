@@ -1,0 +1,297 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+
+#navigacija {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+}
+
+#logoIme {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    margin-right: 10px;
+}
+
+#imeSajta {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#navigacijaDesnaStrana {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navigacijaLinkovi {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+#navigacijaLinkovi li {
+    margin-right: 20px;
+}
+
+#navigacijaLinkovi li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+#navigacijaLinkovi li a:hover {
+    transition: 0.1s ease-in;
+    color:white;
+}
+
+#hamburger{
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+#hamburger-linije:hover .linija{
+    transition: 0.1s ease-in;
+    background-color:white;
+}
+
+
+#hamburger-linije {
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.linija {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+
+#meni {
+    height: 600px;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.85);
+    position: absolute;
+    top:100px;
+}
+
+#hamburger-meni {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-meni-link {
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(245, 245, 245);
+}
+
+.hamburger-meni-link:hover {
+    transition: 0.2s ease-in-out;
+    color: rgb(242, 147, 14);
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: rgb(255, 255, 255,0.2) 0 0 60px 50px;
+}
+
+.opcijeDugme {
+    cursor: pointer;
+}
+
+#hamburgerOpcije {
+    margin-top: 40px    ;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+
+#mega-meni {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    margin:0 auto;
+    z-index: 1000;
+}
+
+.mega-meni-kolona {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.mega-meni-kolona-naziv {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:  rgb(242, 147, 14);
+}
+
+.mega-meni-kolona-link {
+    display: block;
+    width: fit-content;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;    
+    transition: color 0.3s ease;
+}
+
+.mega-meni-kolona-link:hover {
+    transition: 0.2s ease-in-out;
+    color: rgb(242, 147, 14);
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: rgb(255, 255, 255,0.2) 0 0 60px 20px;
+}
+
+.mega-meni-kolona img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#banerSekcija {
+    height: 500px;
+    width: 100%;
+    background-image: url('../slike/baneri/baner2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.banerDugme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+    width: 50px;
+    background-color: rgba(50, 50, 50, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.banerIkonica {
+    width: 30px;
+    height: 30px;
+}
+
+#banerSekcija:hover .banerDugme {
+    opacity: 1;
+}
+
+
+
+.nevidljivo {
+    display: none;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid #444;
+}
+
+.footerSekcija {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footerSekcija h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footerSekcija p {
+    margin: 5px 0;
+}
+
+.footerSekcija a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerSekcija a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+    #glavniFooter {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerSekcija {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+  
+}
+
+@media (max-width: 1250px) {
+    #navigacijaLinkovi {
+        display: none;
+    }
+
+   
+    #hamburger-meni {
+        display: flex;
+    }
+    
+    #mega-meni {
+        display: none;
+    }
+
+
+header{
+    height: fit-content;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+}

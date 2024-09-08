@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stranica O Nama sajta Card Nexus">
+    <link href="css/glavni.css" rel="stylesheet">
+    <link href="css/stranice/oNama.css" rel="stylesheet">
+    <link id="font" href="css/font/normalanFont.css" rel="stylesheet">
+    <link id="tema" href="css/teme/svetla.css" rel="stylesheet">
+    <title>Card Nexus: O Nama</title>
+</head>
+<body>
+    <header>
+        <nav id="navigacija">
+            <div id="logoIme">
+                <img src="slike/ikonice/logo2.png" alt="Logo" id="logo">
+                <a href="index.html" id="imeSajta">Card Nexus: Emporijum Karti</a>
+            </div>
+            <div id="navigacijaDesnaStrana">
+                <ul id="navigacijaLinkovi">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="oNama.html">O Nama</a></li>
+                    <li><a href="katalog.html">Katalog</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div id="hamburger">
+                    <div id="hamburger-linije">
+                        <div class="linija"></div>
+                        <div class="linija"></div>
+                        <div class="linija"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</header>
+<section id="meni" class="nevidljivo">
+    <div id="hamburger-meni">
+        <a class="hamburger-meni-link" href="index.html">Početna</a>
+        <a class="hamburger-meni-link" href="oNama.html">O Nama</a>
+        <a class="hamburger-meni-link" href="katalog.html">Katalog</a>
+        <a class="hamburger-meni-link" href="kontakt.html">Kontakt</a>
+        <div id="hamburgerOpcije">
+            <img src="slike/ikonice/temaIkonica.png" class="opcijeDugme" id="promeniTemuHamburger">
+            <img src="slike/ikonice/fontIkonica.png" alt="Font Ikonica" class="opcijeDugme" id="promeniFontHamburger">
+            <img src="slike/ikonice/sacuvajIkonica.png" class="opcijeDugme" id="sacuvajKolaciceHamburger">
+        </div>
+    </div>
+    <div id="mega-meni">
+        <div class="mega-meni-kolona">
+            <h5 class="mega-meni-kolona-naziv">Sajt</h5>
+             <a href="index.html" class="mega-meni-kolona-link">Početna</a>
+             <a href="oNama.html" class="mega-meni-kolona-link">O Nama</a>
+             <a href="katalog.html" class="mega-meni-kolona-link">Katalog</a>
+             <a href="kontakt.html" class="mega-meni-kolona-link">Kontakt</a>
+        </div>
+        <div class="mega-meni-kolona">
+            <h5 class="mega-meni-kolona-naziv">Katalog</h5>
+            <a href="katalog.html#yugiohDeo" class="mega-meni-kolona-link">YuGiOh!</a>
+            <a href="katalog.html#mtgDeo" class="mega-meni-kolona-link">Magic The Gathering</a>
+            <a href="katalog.html#pokemonDeo" class="mega-meni-kolona-link">Pokemon</a>
+        </div>
+        <div class="mega-meni-kolona">
+            <h5 class="mega-meni-kolona-naziv">Opcije</h5>
+            <img src="slike/ikonice/temaIkonica.png" class="opcijeDugme" id="promeniTemuMega">
+            <img src="slike/ikonice/fontIkonica.png" alt="Font Ikonica" class="opcijeDugme" id="promeniFontMega">
+            <img src="slike/ikonice/sacuvajIkonica.png" class="opcijeDugme" id="sacuvajKolaciceMega">
+        </div>
+        
+    </div>
+</section>
+    <main>
+        <section id="banerSekcija">
+            <div id="dugmeLevo" class="banerDugme" onclick="promeniSlikuBanera(-1)" >
+                <img src="slike/ikonice/banerDugmeLevo.png" class="banerIkonica" alt="Banner Dugme Levo">
+            </div>
+            <div id="dugmeDesno" class="banerDugme" onclick="promeniSlikuBanera(1)">
+                <img src="slike/ikonice/banerDugmeDesno.png" class="banerIkonica" alt="Banner Dugme Desno">
+            </div>
+        </section>
+        <section id="sadrzajSekcija">
+            <div class="sadrzaj">
+                <div class="sadrzajTekstKontejner">
+                        <h1 class="sadrzajNaslov">Ko smo mi?</h1>
+                        <p class="sadrzajTekst">Mi smo najbolje mesto da se nadju kolekcionarske karte, od retkih i starih primeraka, sve do najnovijih "meta" karti.
+                            Bavimo se prodajom karti već 10 godina, počevši sa Yu Gi Oh! kartama, i kasnije Pokemon i Magic The Gathering karticama.
+                            Takodje prodajemo i pribor i razne predmete koji se mogu koristiti uz date kartice.
+                        </p>
+                </div>
+                <div class="sadrzajSlikaKontejner">
+                    <img class="sadrzajSlika slikaLevo" src="slike/sadrzaj/sadrzaj1.png" alt="slikaProdavnice">
+                </div>
+            </div>
+
+            <div class="sadrzaj obrnutRedosled">
+                <div class="sadrzajSlikaKontejner">
+                    <img class="sadrzajSlika slikaDesno" src="slike/sadrzaj/sadrzaj2.png" alt="slikaKarti">
+                </div>
+                <div class="sadrzajTekstKontejner">
+                        <h1 class="sadrzajNaslov">Šta vam nudimo?</h1>
+                        <p class="sadrzajTekst">Nudimo vam najkvalitetnije i original karte iz Yu Gi Oh-a, pokemona i MTG-a.
+                            Imamo širok izbor karti raznih kvaliteta čak i do veoma retkih kolekcionarskih izdanja.
+                            Takodje nudimo opciju da menjate vaše karte ili čak i da ih otkupimo od vas.
+                        </p>
+                </div>
+            </div>
+
+            <div class="sadrzaj">
+                <div class="sadrzajTekstKontejner">
+                        <h1 class="sadrzajNaslov">Želite da pokažete vašu ljubav prema hobiju?</h1>
+                        <p class="sadrzajTekst">Pored karti, nudimo vam i našu veliku kolekciju pribora, aksesoara,
+                             i drugih kolekcionarskih predmeta koji će upotpuniti vašu kolekciju.
+                        </p>
+                </div>
+                <div class="sadrzajSlikaKontejner">
+                    <img class="sadrzajSlika slikaLevo" src="slike/sadrzaj/sadrzaj3.png" alt="slikaPribora">
+                </div>
+            </div>
+
+            <div class="sadrzaj obrnutRedosled">
+                <div class="sadrzajSlikaKontejner">
+                    <img class="sadrzajSlika slikaDesno" src="slike/sadrzaj/sadrzaj4.png" alt="slikaSale">
+                </div>
+                <div class="sadrzajTekstKontejner">
+                        <h1 class="sadrzajNaslov">Treba vam mesto da isprobate vaše nove karte?</h1>
+                        <p class="sadrzajTekst">Takodje vam nudimo i salu u kojoj možete isprobati vaše nove karte, i igrati protiv vaših prijatelja,
+                             ili drugih kolekcionara koji dele vašu strast prema igrama i kartama.
+                        </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSekcija">
+            <h3>O nama</h3>
+            <p>Mi smo prodavnica specijalizovana za kolekcionarske karte i dodatke. Naša strast je da vam obezbedimo najbolje iskustvo kupovine karti.</p>
+        </div>
+        <div class="footerSekcija">
+            <h3>Kontakt</h3>
+            <p>Email: kontakt@cardnexus.rs</p>
+            <p>Telefon: +381 11 123 4567</p>
+        </div>
+        <div class="footerSekcija">
+            <h3>Pratite nas</h3>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+        <div class="footerSekcija">
+            <h3>Radno vreme</h3>
+            <p>Ponedeljak - Petak: 09:00 - 20:00</p>
+            <p>Subota: 10:00 - 18:00</p>
+            <p>Nedelja: Zatvoreno</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="javascript/prilagodjavanje.js"></script>
+<script src="javascript/banerIMeni.js"></script>

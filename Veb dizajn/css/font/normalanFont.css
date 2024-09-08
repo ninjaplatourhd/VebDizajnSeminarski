@@ -1,0 +1,77 @@
+:root {
+    --sajtNaziv:1.7rem;
+    --navigacija:1.4rem;
+    --naslov:2.9rem;
+    --segmentNaziv:1.7rem;
+    --paragraf:1.3rem;
+    --polja:1.1rem;
+    --footer:1.0rem;
+}
+
+
+#imeSajta {
+    font-size: var(--sajtNaziv);
+}
+
+#navigacijaLinkovi li a {
+    font-size: var(--navigacija);
+}
+
+.sadrzajNaslov {
+    font-size: var(--segmentNaziv);
+}
+
+.sadrzajTekst {
+    font-size: var(--paragraf);
+}
+
+.paragraf{
+    font-size: var(--paragraf);
+}
+
+.glavniNaslov {
+    font-size: var(--naslov);
+}
+
+.tekstCena {
+    font-size: var(--paragraf);
+}
+
+.hamburger-meni-link {
+    font-size: var(--naslov);
+}
+
+.mega-meni-kolona-naziv {
+    font-size: var(--naslov);
+}
+
+.mega-meni-kolona-link {
+    font-size: var(--navigacija);
+}
+
+.footerSekcija h3 {
+    font-size: var(--footer);
+}
+
+.footerSekcija p {
+    font-size: var(--footer);
+}
+
+.formaPolje {
+    font-size: var(--polja);
+}
+
+.karteNaslov{
+    font-size:var(--naslov);
+}
+
+
+
+#modalPoruka {
+    font-size: var(--paragraf);
+}
+
+
+#modalDugme{
+    font-size: var(--paragraf);
+}
